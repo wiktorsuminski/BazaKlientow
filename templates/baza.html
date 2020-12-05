@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+{% extends "theme.html"%}
+{% block title %}Dodaj do bazy{% endblock %}
+{% block content %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='baza.css') }}">
+<div class="form">
+<form action="{{url_for('baza_danych')}}" method="POST">
+    <div class="informacje">
+        <div>Informacje</div> <br>
+        <input type="text" rows="1" cols="20" name="bank" placeholder="Nazwa Banku"> <br>
+        <input type="number" name="suma" placeholder="Suma Bilansowa"> <br>
+        <input type="text" name="zrzeszenie" placeholder="Zrzeszenie"> <br>
+        <input type="text" name="imienazw" placeholder="Imię i nazwisko prezesa"> <br>
+    </div>
+    <div class="kontakt">
+        <div>Kontakt</div> <br>
+        <input type="text" name="miejscowosc" placeholder="Miejscowość"> <br>
+        <input type="text" name="ulica" placeholder="Ulica"> <br>
+        <input width="90px" type="number" name="kodp" placeholder="Kod Pocztowy"> <br>
+        <input type="number" name="nrtel" placeholder="Numer Telefonu"> <br>
+        <input type="email" name="email" placeholder="Email"> <br>
+        <input type="url"  name="www" placeholder="Strona www"> <br>
+    </div>
+    <div class="data">
+        <div>Data</div>
+        <input type="date" name="data"> <br>
+    </div>
+    <div class="przycisk">
+        <button type="submit" value="submit">Zapisz</button>
+    </div>
+    <div class="kom"> 
+        <div>Komentarz</div> <br>
+        <textarea name="komentarz" placeholder="Pole na komentarz" cols="50" rows="10"></textarea> <br>
+    </div>
+
+</form></div>
+{% endblock %}

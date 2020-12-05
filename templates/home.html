@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<head>
+    <title>Strona domowa</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='home.css') }}">
+</head>
+<body>
+    <a  href="/widok_bazy">
+        <div class="widok">Widok</div>
+    </a>
+    <a href="/kalendarz">
+        <div class="kalendarz">Kalendarz</div>
+    </a>
+    <a href="/baza_danych">
+        <div class="dod">Dodaj do bazy</div>
+    </a>
+    <a class="wid" href="/wyloguj">
+        <div class="wyl">Wyloguj</div>
+    </a>
+</body>

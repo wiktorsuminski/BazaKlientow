@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+{% extends "theme.html" %}
+{% block title %}Baza klientów{% endblock %}
+{% block content %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='kalendarz.css') }}">
+    <div class="najb">
+        <a class="kal">Najbliższe wydarzenie: {{values.first().data}}</a><br>
+        <hr><br>
+        <a class="kal">{{values.first().komentarz}}</a>
+    </div>
+    <div class="pozost">
+    {% for item in values %}
+        <div class="poz">
+            <a class="kal">{{item.data}}</a><br>
+            <hr><br>
+            <a class="kal">{{item.komentarz}}</a>
+        </div>
+    {% endfor %}
+    </div>
+{% endblock %}

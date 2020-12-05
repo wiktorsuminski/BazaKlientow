@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+{% extends "theme.html"%}
+{% block title %}Dodaj do bazy{% endblock %}
+{% block content %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='pojwid.css') }}">
+<form class="form" method="POST" action="/update/{{item.id}}">
+    <div class="informacje">
+        Nazwa<input class="input" value="{{item.nazwabanku}}" name="nazwa">  
+        Suma<input type="number" class="input" value="{{item.suma}}" name="suma">  
+        Zrzeszenie<input class="input" value="{{item.zrzeszenie}}" name="zrzeszenie">  
+        Prezes<input class="input" value="{{item.imienazw}}" name="imienazw"> 
+    </div>
+    <div class="kontakt">
+        Miejscowość<input class="input" value="{{item.miejsc}}" name="miejsc">  
+        Ulica<input class="input" value="{{item.ulica}}" name="ulica">  
+        Kod Pocztowy<input class="input" value="{{item.kodp}}" name="kodp"> 
+        Telefon<input type="number" class="input" value="{{item.nrtel}}" name="nrtel"> 
+        Email<input type="email" class="input" value="{{item.email}}" name="email">  
+        WWW<input class="input" value="{{item.www}}" name="www">  
+    </div>
+    <div class="data">
+        <input type="date" class="data1" value="{{item.data}}" name="datakal"> 
+    </div>
+    <div class="przycisk">
+        <button type="submit" onclick="return confirm('Czy na pewno chcesz edytować?');">Edytuj</button>
+    </div>
+    <div class="przycisk">
+        <a href="/dl/{{item.id}}" onclick="return confirm('Czy na pewno chcesz usunąć?');">Usuń</a>
+    </div>
+    <div class="kom"> 
+        <div>Komentarz</div> <br>
+        <textarea class="komen" name="komentarz">{{item.komentarz}} </textarea>
+    </div>
+
+</form>
+{% endblock %}
