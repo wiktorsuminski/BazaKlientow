@@ -1,0 +1,41 @@
+body{
+    background-color: rgb(90, 90, 90);
+}
+.kal{
+    color: black;
+    font-size: 25px;
+}
+.kal:hover{
+    color: black;
+}
+hr{
+    border:1px dashed black;
+}
+.najb{
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+    width: calc(50% - 40px);
+    margin: 20px;
+    height: calc(100vh - 90px);
+    background-color: greenyellow;
+    float: left;
+}
+.pozost{
+    width: calc(50% - 40px);
+    margin: 20px;
+    float: left;
+    height: calc(100vh - 90px);
+}
+.poz{
+    border-radius: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    width: calc(100% - 50px);
+    margin: 20px;
+    padding: 10px;
+    margin-top: 0;
+    height: 200px;
+    background-color: rgb(218, 51, 1);
+}

@@ -1,0 +1,54 @@
+body{
+    margin: 0 auto;
+    background-color: rgb(39, 39, 39);
+}
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: greenyellow;
+    word-wrap: break-word;
+}
+.widok{
+    width: calc(100% - 80px);
+    margin: 40px;
+    height: calc(50vh - 80px);
+    border-radius: 20px;
+
+}
+.kalendarz{
+    float: left;
+    width: calc(50% - 80px);
+    height: calc(50vh - 40px);
+    margin: 40px;
+    margin-top: 0px;
+    border-radius: 20px;
+}
+.dod{
+    width: calc(50% - 40px);
+    height: calc(35vh - 40px);
+    margin: 40px;
+    margin-top: 0px;
+    margin-left: 0;
+    border-radius: 20px;
+    float: left;
+}
+.wyl{
+    width: calc(50% - 40px);
+    height: calc(15vh - 40px);
+    margin: 40px;
+    margin-top: 0px;
+    margin-left: 0;
+    border-radius: 20px;
+    float: left;
+    background-color: rgb(197, 0, 0);
+}
+a{
+    color: rgb(34, 34, 34);
+    text-decoration: none;
+    font-size: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.wid{
+    font-size: 50px;
+}
